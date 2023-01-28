@@ -1,16 +1,82 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
+
 <html>
+    <!-- para hacer los imports debo hacerlos dentro del head. -->
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso Progra</title>
+        <!-- la primera propiedad de link nos dice el tipo de elemento que vamos a agregar -->
+        <!-- la href es la direccion donde se encuentra el archivo -->
+        <link rel="stylesheet" href="css/index.css"/>
     </head>
+
+    <!-- SEO(search engine optimization) -->
     <body>
-        <h1>Pagina Inicial </h1>
-        <p>Esta es la primera pagina del curso web y patrones</p>
+        
+        <div class='block'>BLOQUE</div>
+        
+        <div class='static'>ESTO ES ESTATICO</div>
+        
+        <div class='relative'>ESTO ES RELATIVO</div>
+        
+        <!-- div es para division, esta me sirve para agrupar mas etiquetas -->
+        <div>
+            <!-- Heading/ Para titulos -->
+            <h1> Hola Mundo </h1>
+            <h2> Hola Mundo </h2>
+            <h3> Hola Mundo </h3>
+            <h4> Hola Mundo </h4>
+            <h5> Hola Mundo </h5>
+            <h6> Hola Mundo </h6>
+            
+        </div>
+        
+        <!-- section igual funciona para agrupar, es como un div, pero section depende de la pagina que se esta mostrando -->
+        <!-- una etiqueta independiente de la pagina es article -->
+        <!-- y si no es para ninguna de esas dos usamos el div -->
+        <section>
+            <!-- Paragraph/ Para parrafos -->
+            <p>Esta es la primera pagina del curso web y patrones</p>
+
+            <!-- Ordered list/ para lista ordenada -->
+            <!-- li hace referencia a list item -->
+            <ol>
+                <li>first</li>
+                <li>second</li>
+                <li>third</li>
+                <li>second</li>
+                <li>first</li>
+                <li>
+                    <ul>
+                        <li>first</li>
+                        <li>second</li>
+                        <li>third</li>
+                    </ul>
+                </li>
+            </ol>
+            
+        </section>
+
+        <!-- Unordered list/ para lista desordenada -->
+        <!-- li hace referencia a list item -->
+        <ul>
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+        </ul>
+
+        <!-- hyperlink  -->
+        <!-- Las urls absolutas estan en nuestro servidor de manera local -->
+        <!-- Las urls relativas estan en el exterior -->
+        <!-- en href se debe colocar a donde queremos direccionar -->
+        <a href="home.html"> Home </a>
+
+        <!-- BR es break y es para salto de linea -->
+        <!-- br no necesita etiqueta de cierre por que es un empty tag, esta no tiene contenido -->
+        <p>Esta es la primera pagina del curso web y patrones <br> Pronto mas funcionalidades</p>
+
+        <!-- img es para imagen, esta etiqueta posee dos atributos, source que es para indicar donde se encuentra la imagen -->
+        <!-- y alt es por si no se logra mostrar la imagen, entonces describe -->
+        <img src="images/charger.jpg" alt="Esta es una imagen de un dodge charger"/>
+
     </body>
 </html>
