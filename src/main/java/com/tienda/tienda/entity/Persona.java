@@ -17,7 +17,7 @@ import java.io.Serializable;
  *
  * @author mathi
  */
-@Entity
+@Entity //patron decorador - a la hora de compilar le da caracteristicas o atributos a nuestro constructor.
 @Table(name = "personas")
 public class Persona implements Serializable {
 
